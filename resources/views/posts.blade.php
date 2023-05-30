@@ -87,7 +87,7 @@
                                         href="/posts?user={{ $post->user->nim }}"
                                         class="text-decoration-none">{{ $post->user->name }}</a> : <a
                                         href="/posts?category={{ $post->category->slug }}"
-                                        class="text-decoration-none">{{ $post->category->name }}</a>
+                                        class="text-decoration-none">{{ $post->category->name }}</a> <br>
                                         {{ $post->created_at->diffForHumans() }}
                                     </small>
                                 </p>

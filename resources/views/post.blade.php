@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
             <div class="col-md-10 mb-4" style="opacity: 90%;">
                 <div class="card">
-                    <img src="{{ asset('storage/'. $post->image) }}" class="card-img-top" alt="{{ $post->title }}" style="max-width: 1000px;min-height:350px;max-height:350px;">
+                    <img src="{{ asset('storage/'. $post->image) }}" class="card-img-top" alt="{{ $post->title }}" style="max-width: 1200px;min-height:350px;max-height:350px;">
                     <div class="card-body">
                         <h2 class="card-title mb-3">{{ $post->title }}</h2>
                         
