@@ -13,7 +13,7 @@ class AdminKlaimController extends Controller
         
         return view('admin.index',[
             "title" => "Pengajuan Klaim",
-            'klaims' => Klaim::all()
+            'klaims' => Klaim::latest()->get()
         ]);
     }
 

@@ -13,7 +13,7 @@ class KlaimController extends Controller
         
         return view('klaim.index',[
             "title" => "Klaim Saya",
-            'klaims' => Klaim::where('user_id', auth()->user()->id)->get()
+            'klaims' => Klaim::where('user_id', auth()->user()->id)->latest()->get()
         ]);
     }
     public function addToKlaim(Request $request, $slug)
