@@ -26,7 +26,7 @@
                 @enderror
             </div>
               <div class="form-floating">
-                <input type="text" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="email" value="{{ old('email') }}">
+                <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="email" value="{{ old('email') }}">
                 <label for="email">Email</label>
                 @error('email')    
                 <div class="invalid-feedback">
