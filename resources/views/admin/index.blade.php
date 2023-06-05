@@ -19,8 +19,7 @@
           <th scope="col">Nama Barang</th>
           <th scope="col">Kategori</th>
           <th scope="col">Kondisi</th>
-          <th scope="col">Pemilik Postingan</th>  
-          <th scope="col">Kontak Pemilik Postingan</th>  
+          <th scope="col">Pemilik Postingan</th>   
           <th scope="col">Pengaju Klaim</th>  
           <th scope="col">Status</th>  
           <th scope="col">Aksi</th>  
@@ -30,12 +29,11 @@
         @foreach ($klaims as $klaim)    
         <tr>
           <td class="text-white" style="vertical-align: middle">{{ $loop->iteration }}</td>
-          <td class="text-white" style="vertical-align: middle">{{ $klaim->post->title }}</td>
+          <td class="text-white" style="vertical-align: middle"><a href="/posts/{{ $klaim->post->slug }}" class="text-white">{{ $klaim->post->title }}</a></td>
           <td class="text-white" style="vertical-align: middle">{{ $klaim->post->category->name }}</td>
           <td class="text-white" style="vertical-align: middle">{{ $klaim->post->condition->name }}</td>
-          <td class="text-white" style="vertical-align: middle">{{ $klaim->post->user->name }}</td>
-          <td class="text-white" style="vertical-align: middle"><a href="https://wa.me/{{ $klaim->post->user->no_hp }}" class="text-decoration-none text-white btn btn-success"><i class="fa-brands fa-whatsapp" style="color: #1ae817;"></i> {{ $klaim->post->user->name }}</a></td>
-          <td class="text-white" style="vertical-align: middle">{{ $klaim->user->name }}</td>
+          <td class="text-white" style="vertical-align: middle">{{ $klaim->post->user->name }} <a href="https://wa.me/{{ $klaim->post->user->no_hp }}" class="text-decoration-none text-white btn btn-success"><i class="fa-brands fa-whatsapp" style="color: #1ae817;"></i></td>
+          <td class="text-white" style="vertical-align: middle">{{ $klaim->user->name }} <a href="https://wa.me/{{ $klaim->user->no_hp }}" class="text-decoration-none text-white btn btn-success"><i class="fa-brands fa-whatsapp" style="color: #1ae817;"></i></td>
           @if ($klaim->status_id == 2)
           <td class="text-white" style="vertical-align: middle;"><button class="btn btn-outline-warning" disabled>{{ $klaim->status->name }}</button></td>
           @elseif($klaim->status_id == 3)

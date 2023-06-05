@@ -28,7 +28,7 @@
         @foreach ($klaims as $klaim)    
         <tr>
           <td class="text-white" style="vertical-align: middle">{{ $loop->iteration }}</td>
-          <td class="text-white" style="vertical-align: middle">{{ $klaim->post->title }}</td>
+          <td class="text-white" style="vertical-align: middle"><a href="/posts/{{ $klaim->post->slug }}" class="text-white">{{ $klaim->post->title }}</a></td>
           <td class="text-white" style="vertical-align: middle">{{ $klaim->post->category->name }}</td>
           <td class="text-white" style="vertical-align: middle">{{ $klaim->post->condition->name }}</td>
           <td class="text-white" style="vertical-align: middle">{{ $klaim->post->user->name }}</td>
