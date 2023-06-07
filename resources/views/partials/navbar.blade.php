@@ -129,25 +129,6 @@
               </li>
           </fieldset>
           @endcan  
-            {{-- <li class="nav-item d-flex align-items-center justify-content-end">
-                <div class="wrapper">
-                    <form action="/posts">
-                      @if (request('category'))
-                        <input type="hidden" name="category" value="{{ request('category') }}">
-                      @endif
-                      @if (request('user'))
-                        <input type="hidden" name="user" value="{{ request('user') }}">
-                      @endif
-                        <button type="reset" class="btn-reset2">
-                          <img src="/img/x.svg" alt="">
-                        </button>
-                        <input type="text" class="inp2" name="search">
-                        <button type="submit" class="btn-submit2">
-                          <img src="/img/search.svg" alt="">
-                        </button>
-                    </form>
-                </div>
-            </li> --}}
           </ul>
         </div>
         

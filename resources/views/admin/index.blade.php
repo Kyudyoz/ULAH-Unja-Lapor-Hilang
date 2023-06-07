@@ -48,11 +48,6 @@
               @csrf
               <button type="submit" class="btn btn-info"><i class="fa-solid fa-check"></i></button>
             </form>
-            {{-- <form action="klaims/proses/{{ $klaim->id }}" method="post" class="d-inline">
-              @method('put')
-              @csrf
-            <button type="submit" class="btn btn-warning"><i class="fa-solid fa-clock"></i></button>
-            </form> --}}
             <form action="klaims/gagal/{{ $klaim->id }}" method="post" class="d-inline">
               @method('put')
               @csrf

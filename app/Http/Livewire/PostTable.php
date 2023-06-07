@@ -18,7 +18,7 @@ class PostTable extends Component
             ->when($this->search, function ($query) {
                 $query->where('title', 'like', '%' . $this->search . '%');
             })
-            ->filter(request(['search','user','category']))
+            ->filter(request(['search','category']))
             ->paginate(3)
             ->withQueryString()
         ]);
