@@ -10,7 +10,7 @@ Berikut adalah langkah-langkah untuk mengkloning dan menjalankan proyek ini seca
 
 2. **Clone Proyek dari GitHub:**
    ```bash
-   git clone https://github.com/Kyudyoz/ULAH.git
+   git clone https://github.com/Kyudyoz/ULAH-Unja-Lapor-Hilang.git
 3. **Masuk ke direktori project**
 4. **Instal Dependensi Composer**
     ```bash
